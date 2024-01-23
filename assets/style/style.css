@@ -1,0 +1,89 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  background-color: #000000;
+  color: white;
+  font-size: 0.7rem;
+  overflow: auto;
+  height: calc(100vh - 60px);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.transparent-box {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+/* MAIN - VIEW MENU */
+.view-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.view-menu li i {
+  font-size: 0.8rem;
+}
+
+#grid-icon {
+  padding-right: 4px;
+}
+
+/* MAIN - PARTICIPANTS GRID */
+.participants-grid {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.participant {
+  width: calc(100% / 7);
+  position: relative;
+  padding: 0 3px;
+  margin-bottom: 10px;
+}
+
+.participant .participant-photo {
+  height: 100%;
+}
+
+.participant .participant-name {
+  position: absolute;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  font-size: .7vw;
+}
+
+/* FOOTER  */
+footer {
+  height: 60px;
+  background-color: aquamarine;
+}
